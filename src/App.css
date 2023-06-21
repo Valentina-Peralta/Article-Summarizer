@@ -193,4 +193,11 @@ input {
 .summary-box {
     letter-spacing: 1px;
     line-height: 2rem;
+
+}
+
+.copy-summary-btn {
+    display: flex;
+    justify-content: end;
+
 }

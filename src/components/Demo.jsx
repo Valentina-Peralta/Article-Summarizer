@@ -129,6 +129,12 @@ const Demo = () => {
                                 Article <span className="blue">Summary</span>
                             </h2>
                             <div className='summary-box'>
+                                <div className='copy-summary-btn' onClick={() => handleCopy(article.summary)}>
+                                    <img
+                                        src={copied === article.summary ? tick : copy}
+                                        alt={copied === article.summary ? "tick_icon" : "copy_icon"}
+                                    />
+                                </div>
                                 <p >
                                     {article.summary}
                                 </p>
