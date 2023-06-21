@@ -82,9 +82,9 @@ const Demo = () => {
                     />
                     <button
                         type='submit'
-                        className='submit_btn'
+                        className='submit-btn'
                     >
-                        <p>↵</p>
+                        ↵
                     </button>
                 </form>
 
@@ -94,9 +94,9 @@ const Demo = () => {
                         <div
                             key={`link-${index}`}
                             onClick={() => setArticle(item)}
-                            className='link_card'
+                            className='link-card'
                         >
-                            <div className='copy_btn' onClick={() => handleCopy(item.url)}>
+                            <div className='copy-btn' onClick={() => handleCopy(item.url)}>
                                 <img
                                     src={copied === item.url ? tick : copy}
                                     alt={copied === item.url ? "tick_icon" : "copy_icon"}
@@ -113,7 +113,7 @@ const Demo = () => {
             {/* Display Result */}
             <div className='result-container'>
                 {isFetching ? (
-                    <img src={loader} alt='loader' />
+                    <img className="loader" src={loader} alt='loader' />
                 ) : error ? (
                     <p className='error-msg'>
                         Well, that wasn't supposed to happen...
@@ -126,9 +126,9 @@ const Demo = () => {
                     article.summary && (
                         <div className='summary-container'>
                             <h2 >
-                                Article <span>Summary</span>
+                                Article <span className="blue">Summary</span>
                             </h2>
-                            <div className='summary_box'>
+                            <div className='summary-box'>
                                 <p >
                                     {article.summary}
                                 </p>

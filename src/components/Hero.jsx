@@ -6,15 +6,15 @@ function Hero() {
         <header>
             <nav>
                 <img src={logo} alt='sumz-logo' />
-                <button
+                {/* <button
                     className='github'
                     type='button'
                     onClick={() => window.open('https://github.com/Valentina-Peralta')}
                 >
                     GitHub
-                </button>
+                </button> */}
             </nav>
-            <h1>Summarize Articles with OpenAI GPT-4</h1>
+            <h1>Summarize Articles with <br /><span className='orange'>OpenAI GPT-4</span></h1>
             <h2>
                 Simplify your reading with Summize, an open-source article summarizer that transforms lengthy articles into clear and concise summaries
             </h2>

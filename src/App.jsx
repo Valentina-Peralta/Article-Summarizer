@@ -4,10 +4,13 @@ import Hero from './components/Hero'
 function App() {
     return (
         <main>
+            <div className="gradient"></div>
             <div className="app">
+
                 <Hero />
                 <Demo />
             </div>
+            <p>Coded by Valentina Peralta</p>
         </main>)
 }
 
